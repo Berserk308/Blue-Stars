@@ -1,4 +1,3 @@
-===============================================================================
 Dataset: blue_stars_results.csv
 Project: Photometric analysis of hot stars (spectral types O, B, A)
 Author: [Berserk 308]
@@ -28,7 +27,7 @@ The RGB color is an approximate mapping from temperature to visible color
 based on blackbody radiation models. It is for visualization only and not
 meant to be spectroscopically accurate.
 
-===============================================================================
+
 📡 DATA SOURCES
 ===============================================================================
 
@@ -47,13 +46,11 @@ Data access method:
 - Star names resolved through VizieR object search
 - When necessary, Simbad is queried for missing photometry
 
-===============================================================================
+
 📂 FILES INCLUDED
 ===============================================================================
 
 - blue_stars.csv .................... Input star list (50 stars)
 - blue_stars_query.py ............... Python script to retrieve and process data
 - blue_stars_results.csv ............ Final results with photometry, Teff, RGB, hex color
-- README_blue_stars.md ............. This documentation file
-
-===============================================================================
+- README.md ............. This documentation file

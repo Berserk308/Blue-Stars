@@ -1,17 +1,14 @@
 name_input,name_resolved,name_alt1
 Vega,Alpha Lyrae,HR 7001
 Sirius,Alpha Canis Majoris,HR 2491
-Altair,Alpha Aquilae,HR 7557
-Deneb,Alpha Cygni,HR 7924
 Rigel,Beta Orionis,HR 1713
-Spica,Alpha Virginis,HR 5056
+Bellatrix,Gamma Orionis,HR 1790
+Mintaka,Delta Orionis,HR 1852
 Alnilam,Epsilon Orionis,HR 1903
 Alnitak,Zeta Orionis,HR 1948
-Mintaka,Delta Orionis,HR 1852
-Bellatrix,Gamma Orionis,HR 1790
+Spica,Alpha Virginis,HR 5056
+Deneb,Alpha Cygni,HR 7924
 Achernar,Alpha Eridani,HR 472
-Regulus,Alpha Leonis,HR 3982
-Alpheratz,Alpha Andromedae,HR 15
 Mirzam,Beta Canis Majoris,HR 2294
 Saiph,Kappa Orionis,HR 2294
 Zeta Puppis,Zeta Puppis,HR 3165
@@ -19,34 +16,59 @@ Delta Orionis,Delta Orionis,HR 1852
 Beta Centauri,Hadar,HR 5267
 Gamma Cassiopeiae,Gamma Cassiopeiae,HR 264
 Alcyone,Eta Tauri,HR 1165
-Atlas,27 Tauri,HD 23850
 Electra,17 Tauri,HD 23302
-Maia,20 Tauri,HD 23408
 Merope,23 Tauri,HD 23480
+Atlas,27 Tauri,HD 23850
 Taygeta,19 Tauri,HD 23338
 Pleione,28 Tauri,HD 23862
 Celaeno,16 Tauri,HD 23288
+Maia,20 Tauri,HD 23408
 Elnath,Beta Tauri,HR 1791
 Canopus,Alpha Carinae,HR 2326
-Chertan,Theta Leonis,HR 4357
+Alkaid,Eta Ursae Majoris,HR 5191
+Alioth,Epsilon Ursae Majoris,HR 4905
 Menkalinan,Beta Aurigae,HR 2088
-Dschubba,Delta Scorpii,HR 5953
+Alhena,Gamma Geminorum,HR 2421
+Scheat,Beta Pegasi,HR 8775
 Shaula,Lambda Scorpii,HR 6580
 Lesath,Upsilon Scorpii,HR 6508
 Kappa Scorpii,Kappa Scorpii,HR 6027
 Iota Scorpii,Iota Scorpii,HR 6020
-Lambda Scorpii,Lambda Scorpii,HR 6580
 Nu Scorpii,Nu Scorpii,HR 6134
-Mu Normae,Mu Normae,HR 6075
-Theta1 Orionis C,Theta1 Orionis C,HD 37022
-Lambda Orionis,Meissa,HR 1790
 Tau Scorpii,Tau Scorpii,HR 6026
 Zeta Ophiuchi,Zeta Ophiuchi,HR 6175
 Xi Persei,Xi Persei,HR 1040
 AE Aurigae,AE Aurigae,HD 34078
-AE Aurigae,AE Aurigae,HD 34078
-Adhara,Epsilon Canis Majoris,HR 2618
-Graffias,Beta Scorpii,HR 5714
-Almaaz,Eta Aurigae,HR 1641
-Alioth,Epsilon Ursae Majoris,HR 4905
-Phecda,Gamma Ursae Majoris,HR 4301
+Theta1 Orionis C,Theta1 Orionis C,HD 37022
+Lambda Orionis,Meissa,HR 1790
+Pi Scorpii,Pi Scorpii,HR 6027
+Omicron Persei,Omicron Persei,HR 834
+Zubeneschamali,Beta Librae,HR 5531
+Alnitak B,Zeta Orionis B,HR 1949
+Theta Carinae,Theta Carinae,HR 4083
+Delta Scorpii,Dschubba,HR 5953
+Zeta Cephei,Zeta Cephei,HR 8353
+Almach,Gamma Andromedae,HR 603
+Beta Lyrae,Beta Lyrae,HR 7106
+Beta Aurigae,Menkalinan,HR 2088
+Kappa Orionis,Saiph,HR 2294
+Delta Cygni,Delta Cygni,HR 7615
+Pi2 Orionis,Pi2 Orionis,HD 30836
+Nu Cephei,Nu Cephei,HR 8762
+10 Lacertae,10 Lacertae,HR 8316
+Lambda Cephei,Lambda Cephei,HR 8393
+Zeta Persei,Zeta Persei,HR 936
+Beta Monocerotis,Beta Monocerotis,HR 2296
+Gamma Velorum,Gamma Velorum,HR 3207
+Omega Scorpii,Omega Scorpii,HR 6118
+Delta Centauri,Delta Centauri,HR 4337
+Theta Muscae,Theta Muscae,HD 113904
+Sigma Scorpii,Sigma Scorpii,HR 6084
+Lambda Scorpii,Lambda Scorpii,HR 6580
+Zeta Orionis C,Zeta Orionis C,HD 37744
+Zeta1 Scorpii,Zeta1 Scorpii,HR 6215
+HD 93250,HD 93250,None
+HD 93129A,HD 93129A,None
+HD 149757,HD 149757,Zeta Ophiuchi
+Theta2 Orionis A,Theta2 Orionis A,HD 37041
+HR 5171,HR 5171,None
