@@ -2,7 +2,7 @@
 Dataset: blue_stars_results.csv
 Project: Photometric analysis of hot stars (spectral types O, B, A)
 Author: [Berserk 308]
-Version: [1.1.0]
+Version: [1.0.0]
 ===============================================================================
 
 📌 DESCRIPTION:
@@ -37,10 +37,15 @@ Primary photometric data source:
 - VizieR catalog ID: II/215
 - Accessed via: https://vizier.cds.unistra.fr
 - Hosted by: CDS — Centre de Données astronomiques de Strasbourg
+Additional catalogues queried:
+- APASS DR9 (II/336)
+- Tycho-2 (I/259)
+- Simbad photometry service
 
 Data access method:
 - Queried using Astroquery’s VizieR module (Python)
 - Star names resolved through VizieR object search
+- When necessary, Simbad is queried for missing photometry
 
 ===============================================================================
 📂 FILES INCLUDED
@@ -49,6 +54,6 @@ Data access method:
 - blue_stars.csv .................... Input star list (50 stars)
 - blue_stars_query.py ............... Python script to retrieve and process data
 - blue_stars_results.csv ............ Final results with photometry, Teff, RGB, hex color
-- README.md ............. This documentation file
+- README_blue_stars.md ............. This documentation file
 
 ===============================================================================

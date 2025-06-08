@@ -1,1 +1,6 @@
-.blue_stars_results.csv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+new_results.csv

@@ -20,6 +20,7 @@ import sys
 import pandas as pd
 import numpy as np
 from astroquery.vizier import Vizier
+from astroquery.simbad import Simbad
 
 def bv_to_temperature(bv):
     return 4600 * ((1 / (0.92 * bv + 1.7)) + (1 / (0.92 * bv + 0.62)))
@@ -66,6 +67,25 @@ def try_catalog(vizier, name, catalog_id, extract_tycho=False):
         return None
     return None
 
+def try_simbad(name):
+    """Try to get B, V and U fluxes from Simbad."""
+    try:
+        sim = Simbad()
+        sim.add_votable_fields("flux(U)", "flux(B)", "flux(V)")
+        res = sim.query_object(name)
+        if res is None:
+            return None
+        bmag = res["FLUX_B"][0]
+        vmag = res["FLUX_V"][0]
+        umag = res["FLUX_U"][0]
+        if bmag is None or vmag is None:
+            return None
+        bv = float(bmag) - float(vmag)
+        ub = None if umag is None else float(bmag) - float(umag)
+        return bv, ub, float(vmag)
+    except Exception:
+        return None
+
 def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_results.csv"):
     """Process the input catalogue and write the results."""
     df = pd.read_csv(csv_input)
@@ -111,6 +131,15 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
                 if tycho_result:
                     bv, ub, vmag = tycho_result
                     source = "Tycho-2"
+                    resolved_used = name
+                    break
+
+        if bv is None:
+            for name in name_candidates:
+                simbad_result = try_simbad(name)
+                if simbad_result:
+                    bv, ub, vmag = simbad_result
+                    source = "Simbad"
                     resolved_used = name
                     break
 
