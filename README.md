@@ -1,7 +1,4 @@
-Dataset: blue_stars_results.csv
 Project: Photometric analysis of hot stars (spectral types O, B, A)
-Author: [Berserk 308]
-Version: [1.0.0]
 ===============================================================================
 
 📌 DESCRIPTION:
@@ -16,7 +13,8 @@ Each row contains:
 - Estimated effective temperature (Teff) in Kelvin
 - Approximate RGB color (for visualization purposes)
 - Hex color code derived from the RGB value
-- Status: 'ok', 'error', or 'not found'
+- Status: 'ok', 'no B-V', 'processing error', or 'not found'
+- Error message (only set when status is 'processing error')
 
 📊 TEMPERATURE ESTIMATION FORMULA:
 T_eff = 4600 * [ 1 / (0.92 * (B–V) + 1.7) + 1 / (0.92 * (B–V) + 0.62) ]
@@ -46,6 +44,9 @@ Data access method:
 - Star names resolved through VizieR object search
 - When necessary, Simbad is queried for missing photometry
 
+Dataset: blue_stars_results.csv
+Author: [Berserk 308]
+Version: [1.0.0]
 
 📂 FILES INCLUDED
 ===============================================================================

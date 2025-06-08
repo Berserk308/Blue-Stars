@@ -5,13 +5,11 @@ photometric B--V colour index for each star in ``blue_stars.csv`` and
 computes the corresponding effective temperature and an approximate RGB
 colour.  The results are written to ``blue_stars_results.csv``.
 
-Usage::
-
-    python blue_stars_query.py --input blue_stars.csv --output results.csv
-
 ``astroquery`` is required to actually run the catalogue queries.  When
 network access is not available the script will still run but will mark
-the stars as ``not found``.
+the stars as ``not found``.  If an exception occurs while computing the
+temperature or colour, the star is marked as ``processing error`` and the
+exception message is saved in the ``error_message`` column of the output.
 """
 
 import argparse
@@ -143,6 +141,7 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
                     resolved_used = name
                     break
 
+error_message = None
         if bv is None:
             status = "no B-V"
             temp = rgb = hex_color = None
@@ -159,6 +158,7 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
             except Exception as e:
                 temp = rgb = hex_color = None
                 status = "processing error"
+                error_message = str(e)
                 print(f"⚠️ Error for {name_candidates[0]}: {e}")
 
         results.append({
@@ -171,11 +171,10 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
             'RGB': rgb if status == 'ok' else None,
             'hex_color': hex_color if status == 'ok' else None,
             'source': source,
-            'status': status
+            'status': status,
+            'error_message': error_message
         })
 
-    pd.DataFrame(results).to_csv(csv_output, index=False)
-    print(f"\n✅ Results saved to '{csv_output}'")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Query photometry for hot stars")
