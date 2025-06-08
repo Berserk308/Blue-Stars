@@ -2,7 +2,7 @@
 Dataset: blue_stars_results.csv
 Project: Photometric analysis of hot stars (spectral types O, B, A)
 Author: [Berserk 308]
-Version: [1.0.0]
+Version: [1.1.0]
 ===============================================================================
 
 📌 DESCRIPTION:
@@ -16,6 +16,7 @@ Each row contains:
 - Color indices: B–V and U–B
 - Estimated effective temperature (Teff) in Kelvin
 - Approximate RGB color (for visualization purposes)
+- Hex color code derived from the RGB value
 - Status: 'ok', 'error', or 'not found'
 
 📊 TEMPERATURE ESTIMATION FORMULA:
@@ -47,7 +48,7 @@ Data access method:
 
 - blue_stars.csv .................... Input star list (50 stars)
 - blue_stars_query.py ............... Python script to retrieve and process data
-- blue_stars_results.csv ............ Final results with photometry, Teff, RGB
-- README_blue_stars.md ............. This documentation file
+- blue_stars_results.csv ............ Final results with photometry, Teff, RGB, hex color
+- README.md ............. This documentation file
 
 ===============================================================================

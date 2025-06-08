@@ -1,3 +1,22 @@
+"""Retrieve photometric data for a list of hot stars.
+
+This script queries a few VizieR catalogues in order to obtain the
+photometric B--V colour index for each star in ``blue_stars.csv`` and
+computes the corresponding effective temperature and an approximate RGB
+colour.  The results are written to ``blue_stars_results.csv``.
+
+Usage::
+
+    python blue_stars_query.py --input blue_stars.csv --output results.csv
+
+``astroquery`` is required to actually run the catalogue queries.  When
+network access is not available the script will still run but will mark
+the stars as ``not found``.
+"""
+
+import argparse
+import sys
+
 import pandas as pd
 import numpy as np
 from astroquery.vizier import Vizier
@@ -6,6 +25,7 @@ def bv_to_temperature(bv):
     return 4600 * ((1 / (0.92 * bv + 1.7)) + (1 / (0.92 * bv + 0.62)))
 
 def temperature_to_rgb(temp_k):
+    """Map a temperature in Kelvin to an RGB triple and its hexadecimal code."""
     t = temp_k / 100.0
     if t < 66:
         r = 255
@@ -15,7 +35,11 @@ def temperature_to_rgb(temp_k):
         r = 329.69 * ((t - 60) ** -0.1332)
         g = 288.12 * ((t - 60) ** -0.0755)
         b = 255
-    return tuple(np.clip([r, g, b], 0, 255) / 255.0)
+    rgb = tuple(np.clip([r, g, b], 0, 255) / 255.0)
+    hex_color = "#{:02X}{:02X}{:02X}".format(
+        int(rgb[0] * 255), int(rgb[1] * 255), int(rgb[2] * 255)
+    )
+    return rgb, hex_color
 
 def try_catalog(vizier, name, catalog_id, extract_tycho=False):
     try:
@@ -43,16 +67,22 @@ def try_catalog(vizier, name, catalog_id, extract_tycho=False):
     return None
 
 def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_results.csv"):
+    """Process the input catalogue and write the results."""
     df = pd.read_csv(csv_input)
-    Vizier.ROW_LIMIT = 50
+    total = len(df)
+    Vizier.ROW_LIMIT = 200
     gcpd = Vizier(columns=["Star", "Vmag", "B-V", "U-B"])
     apass = Vizier(columns=["B-V", "Vmag", "Bmag"])
     tycho = Vizier(columns=["BTmag", "VTmag"])
 
     results = []
 
-    for _, row in df.iterrows():
-        name_candidates = [row[col] for col in ['name_input', 'name_resolved', 'name_alt1'] if pd.notna(row[col])]
+    for idx, (_, row) in enumerate(df.iterrows(), start=1):
+        name_candidates = [
+            row[col] for col in ["name_input", "name_resolved", "name_alt1"]
+            if pd.notna(row[col])
+        ]
+        print(f"[{idx}/{total}] {name_candidates[0]}")
         bv = ub = vmag = None
         source = "none"
         status = "not found"
@@ -86,15 +116,19 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
 
         if bv is None:
             status = "no B-V"
+            temp = rgb = hex_color = None
             print(f"⚠️ No usable B–V found for {name_candidates[0]}")
         else:
             try:
                 temp = bv_to_temperature(bv)
-                rgb = temperature_to_rgb(temp)
+                rgb, hex_color = temperature_to_rgb(temp)
                 status = "ok"
-                print(f"✅ {name_candidates[0]} resolved via {resolved_used} → T_eff = {temp:.0f} K ({source})")
+                print(
+                    f"✅ {name_candidates[0]} resolved via {resolved_used}"
+                    f" → T_eff = {temp:.0f} K ({source})"
+                )
             except Exception as e:
-                temp = rgb = None
+                temp = rgb = hex_color = None
                 status = "processing error"
                 print(f"⚠️ Error for {name_candidates[0]}: {e}")
 
@@ -106,6 +140,7 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
             'U-B': ub,
             'T_eff_K': round(temp) if status == 'ok' and not np.isnan(temp) else None,
             'RGB': rgb if status == 'ok' else None,
+            'hex_color': hex_color if status == 'ok' else None,
             'source': source,
             'status': status
         })
@@ -114,4 +149,12 @@ def process_star_catalog(csv_input="blue_stars.csv", csv_output="blue_stars_resu
     print(f"\n✅ Results saved to '{csv_output}'")
 
 if __name__ == "__main__":
-    process_star_catalog()
+    parser = argparse.ArgumentParser(description="Query photometry for hot stars")
+    parser.add_argument("--input", default="blue_stars.csv", help="CSV file with the star list")
+    parser.add_argument("--output", default="blue_stars_results.csv", help="Output CSV file")
+    args = parser.parse_args()
+    try:
+        process_star_catalog(args.input, args.output)
+    except Exception as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        sys.exit(1)

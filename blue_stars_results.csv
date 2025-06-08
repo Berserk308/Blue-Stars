@@ -1,46 +1,52 @@
-name,resolved_used,V,B-V,U-B,T_eff_K,RGB,source,status
-Vega,,,,,,,none,no B-V
-Sirius,Sirius,10.545000076293945,-0.11299999803304672,,11796.0,"(np.float64(0.7528616730143155), np.float64(0.831603036281073), np.float64(1.0))",APASS,ok
-Altair,Altair,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Deneb,,,,,,,none,no B-V
-Rigel,,,,,,,none,no B-V
-Spica,,,,,,,none,no B-V
-Alnilam,Alnilam,11.871000289916992,0.039000000804662704,,9663.0,"(np.float64(0.800305336968499), np.float64(0.8609138249914462), np.float64(1.0))",APASS,ok
-Alnitak,Alnitak,9.473999977111816,-0.11400000005960464,,11814.0,"(np.float64(0.752557991040324), np.float64(0.8314128844258863), np.float64(1.0))",APASS,ok
-Mintaka,Mintaka,6.948999881744385,-0.24199999868869781,,14690.0,"(np.float64(0.7133254476372566), np.float64(0.8065605604357289), np.float64(1.0))",APASS,ok
-Bellatrix,Bellatrix,11.767000198364258,-0.5609999895095825,,48167.0,"(np.float64(0.5779878338428767), np.float64(0.7158919590853345), np.float64(1.0))",APASS,ok
-Achernar,,,,,,,none,no B-V
-Regulus,,,,,,,none,no B-V
-Alpheratz,Alpheratz,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Mirzam,Mirzam,12.388999938964844,-0.6740000247955322,,-57479349.0,"(np.float64(1.0), np.float64(nan), np.float64(0.0))",APASS,ok
-Saiph,Saiph,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Zeta Puppis,,,,,,,none,no B-V
-Delta Orionis,Delta Orionis,6.948999881744385,-0.24199999868869781,,14690.0,"(np.float64(0.7133254476372566), np.float64(0.8065605604357289), np.float64(1.0))",APASS,ok
-Beta Centauri,Beta Centauri,10.918000221252441,-0.13600000739097595,,12216.0,"(np.float64(0.7458810153254603), np.float64(0.827223631063814), np.float64(1.0))",APASS,ok
-Gamma Cassiopeiae,Gamma Cassiopeiae,12.369000434875488,0.6159999966621399,,5906.0,"(np.float64(1.0), np.float64(0.9590859651948119), np.float64(0.9183297081432336))",APASS,ok
-Alcyone,Alcyone,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Atlas,Atlas,13.20199966430664,0.5979999899864197,,5975.0,"(np.float64(1.0), np.float64(0.9636688086309222), np.float64(0.9260029432513038))",APASS,ok
-Electra,Electra,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Maia,Maia,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Merope,Merope,15.015999794006348,0.45500001311302185,,6600.0,"(np.float64(1.0), np.float64(0.9868866618755405), np.float64(1.0))",APASS,ok
-Taygeta,Taygeta,10.98799991607666,0.5709999799728394,,6083.0,"(np.float64(1.0), np.float64(0.9706611779523027), np.float64(0.9376757695901975))",APASS,ok
-Pleione,Pleione,14.76099967956543,0.8019999861717224,,5275.0,"(np.float64(1.0), np.float64(0.9150118599934155), np.float64(0.8435483917319117))",APASS,ok
-Celaeno,Celaeno,13.23799991607666,0.6290000081062317,,5856.0,"(np.float64(1.0), np.float64(0.9558141099820301), np.float64(0.9128402730066345))",APASS,ok
-Elnath,Elnath,11.937999725341797,-0.08900000154972076,,11391.0,"(np.float64(0.7601623101584555), np.float64(0.8361644079193997), np.float64(1.0))",APASS,ok
-Canopus,,,,,,,none,no B-V
-Chertan,Chertan,12.64799976348877,0.527999997138977,,6265.0,"(np.float64(1.0), np.float64(0.9821041830858799), np.float64(0.9566901557525574))",APASS,ok
-Menkalinan,Menkalinan,11.293000221252441,1.2230000495910645,,4264.0,"(np.float64(1.0), np.float64(0.8320484100203664), np.float64(0.697041823596755))",APASS,ok
-Dschubba,Dschubba,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Shaula,HR 6580,16.14299964904785,-1.2200000286102295,,-1192.0,"(np.float64(1.0), np.float64(nan), np.float64(0.0))",APASS,ok
-Lesath,Lesath,12.119999885559082,0.38600000739097595,,6956.0,"(np.float64(0.9571675298436632), np.float64(0.9528392209918496), np.float64(1.0))",APASS,ok
-Kappa Scorpii,Kappa Scorpii,16.14299964904785,-1.2200000286102295,,-1192.0,"(np.float64(1.0), np.float64(nan), np.float64(0.0))",APASS,ok
-Iota Scorpii,HR 6020,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Lambda Scorpii,HR 6580,16.14299964904785,-1.2200000286102295,,-1192.0,"(np.float64(1.0), np.float64(nan), np.float64(0.0))",APASS,ok
-Nu Scorpii,Nu Scorpii,12.307000160217285,0.49399998784065247,,6416.0,"(np.float64(1.0), np.float64(0.9914352115038437), np.float64(0.9721167452634052))",APASS,ok
-Mu Normae,Mu Normae,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Theta1 Orionis C,Theta1 Orionis C,10.579999923706055,1.1729999780654907,,4362.0,"(np.float64(1.0), np.float64(0.8409395813371359), np.float64(0.7131598446119338))",APASS,ok
-Lambda Orionis,Lambda Orionis,11.550000190734863,0.04699999839067459,,9574.0,"(np.float64(0.8029318955537151), np.float64(0.8625142135829951), np.float64(1.0))",APASS,ok
-Tau Scorpii,Tau Scorpii,,,,,"(np.float64(nan), np.float64(nan), np.float64(1.0))",APASS,ok
-Zeta Ophiuchi,Zeta Ophiuchi,11.152000427246094,0.1589999943971634,,8495.0,"(np.float64(0.8423388518887911), np.float64(0.8862589915077448), np.float64(1.0))",APASS,ok
-Xi Persei,Xi Persei,14.753999710083008,1.1319999694824219,,4447.0,"(np.float64(1.0), np.float64(0.8484000690836159), np.float64(0.7266001148927455))",APASS,ok
-AE Aurigae,AE Aurigae,15.170999526977539,0.7609999775886536,,5401.0,"(np.float64(1.0), np.float64(0.9242531438235185), np.float64(0.8593835755570155))",APASS,ok
+name,resolved_used,V,B-V,U-B,T_eff_K,RGB,hex_color,source,status
+Vega,,,,,,,,none,no B-V
+Sirius,Sirius,10.545000076293945,-0.11299999803304672,,11796.0,"(np.float64(0.7528616730143155), np.float64(0.831603036281073), np.float64(1.0))",#BFD4FF,APASS,ok
+Altair,Altair,,,,,,,APASS,processing error
+Deneb,,,,,,,,none,no B-V
+Rigel,,,,,,,,none,no B-V
+Spica,,,,,,,,none,no B-V
+Alnilam,Alnilam,11.871000289916992,0.039000000804662704,,9663.0,"(np.float64(0.800305336968499), np.float64(0.8609138249914462), np.float64(1.0))",#CCDBFF,APASS,ok
+Alnitak,Alnitak,9.473999977111816,-0.11400000005960464,,11814.0,"(np.float64(0.752557991040324), np.float64(0.8314128844258863), np.float64(1.0))",#BFD4FF,APASS,ok
+Mintaka,Mintaka,6.948999881744385,-0.24199999868869781,,14690.0,"(np.float64(0.7133254476372566), np.float64(0.8065605604357289), np.float64(1.0))",#B5CDFF,APASS,ok
+Bellatrix,Bellatrix,11.767000198364258,-0.5609999895095825,,48167.0,"(np.float64(0.5779878338428767), np.float64(0.7158919590853345), np.float64(1.0))",#93B6FF,APASS,ok
+Achernar,,,,,,,,none,no B-V
+Regulus,,,,,,,,none,no B-V
+Alpheratz,Alpheratz,,,,,,,APASS,processing error
+Mirzam,Mirzam,12.388999938964844,-0.6740000247955322,,,,,APASS,processing error
+Saiph,Saiph,,,,,,,APASS,processing error
+Zeta Puppis,,,,,,,,none,no B-V
+Delta Orionis,Delta Orionis,6.948999881744385,-0.24199999868869781,,14690.0,"(np.float64(0.7133254476372566), np.float64(0.8065605604357289), np.float64(1.0))",#B5CDFF,APASS,ok
+Beta Centauri,Beta Centauri,10.918000221252441,-0.13600000739097595,,12216.0,"(np.float64(0.7458810153254603), np.float64(0.827223631063814), np.float64(1.0))",#BED2FF,APASS,ok
+Gamma Cassiopeiae,Gamma Cassiopeiae,12.369000434875488,0.6159999966621399,,5906.0,"(np.float64(1.0), np.float64(0.9590859651948119), np.float64(0.9183297081432336))",#FFF4EA,APASS,ok
+Alcyone,Alcyone,,,,,,,APASS,processing error
+Atlas,Atlas,13.20199966430664,0.5979999899864197,,5975.0,"(np.float64(1.0), np.float64(0.9636688086309222), np.float64(0.9260029432513038))",#FFF5EC,APASS,ok
+Electra,Electra,,,,,,,APASS,processing error
+Maia,Maia,,,,,,,APASS,processing error
+Merope,Merope,15.015999794006348,0.45500001311302185,,6600.0,"(np.float64(1.0), np.float64(0.9868866618755405), np.float64(1.0))",#FFFBFF,APASS,ok
+Taygeta,Taygeta,10.98799991607666,0.5709999799728394,,6083.0,"(np.float64(1.0), np.float64(0.9706611779523027), np.float64(0.9376757695901975))",#FFF7EF,APASS,ok
+Pleione,Pleione,14.76099967956543,0.8019999861717224,,5275.0,"(np.float64(1.0), np.float64(0.9150118599934155), np.float64(0.8435483917319117))",#FFE9D7,APASS,ok
+Celaeno,Celaeno,13.23799991607666,0.6290000081062317,,5856.0,"(np.float64(1.0), np.float64(0.9558141099820301), np.float64(0.9128402730066345))",#FFF3E8,APASS,ok
+Elnath,Elnath,11.937999725341797,-0.08900000154972076,,11391.0,"(np.float64(0.7601623101584555), np.float64(0.8361644079193997), np.float64(1.0))",#C1D5FF,APASS,ok
+Canopus,,,,,,,,none,no B-V
+Chertan,Chertan,12.64799976348877,0.527999997138977,,6265.0,"(np.float64(1.0), np.float64(0.9821041830858799), np.float64(0.9566901557525574))",#FFFAF3,APASS,ok
+Menkalinan,Menkalinan,11.293000221252441,1.2230000495910645,,4264.0,"(np.float64(1.0), np.float64(0.8320484100203664), np.float64(0.697041823596755))",#FFD4B1,APASS,ok
+Dschubba,Dschubba,,,,,,,APASS,processing error
+Shaula,HR 6580,16.14299964904785,-1.2200000286102295,,,,,APASS,processing error
+Lesath,Lesath,12.119999885559082,0.38600000739097595,,6956.0,"(np.float64(0.9571675298436632), np.float64(0.9528392209918496), np.float64(1.0))",#F4F2FF,APASS,ok
+Kappa Scorpii,Kappa Scorpii,16.14299964904785,-1.2200000286102295,,,,,APASS,processing error
+Iota Scorpii,HR 6020,,,,,,,APASS,processing error
+Lambda Scorpii,HR 6580,16.14299964904785,-1.2200000286102295,,,,,APASS,processing error
+Nu Scorpii,Nu Scorpii,12.307000160217285,0.49399998784065247,,6416.0,"(np.float64(1.0), np.float64(0.9914352115038437), np.float64(0.9721167452634052))",#FFFCF7,APASS,ok
+Mu Normae,Mu Normae,,,,,,,APASS,processing error
+Theta1 Orionis C,Theta1 Orionis C,10.579999923706055,1.1729999780654907,,4362.0,"(np.float64(1.0), np.float64(0.8409395813371359), np.float64(0.7131598446119338))",#FFD6B5,APASS,ok
+Lambda Orionis,Lambda Orionis,11.550000190734863,0.04699999839067459,,9574.0,"(np.float64(0.8029318955537151), np.float64(0.8625142135829951), np.float64(1.0))",#CCDBFF,APASS,ok
+Tau Scorpii,Tau Scorpii,,,,,,,APASS,processing error
+Zeta Ophiuchi,Zeta Ophiuchi,11.152000427246094,0.1589999943971634,,8495.0,"(np.float64(0.8423388518887911), np.float64(0.8862589915077448), np.float64(1.0))",#D6E1FF,APASS,ok
+Xi Persei,Xi Persei,14.753999710083008,1.1319999694824219,,4447.0,"(np.float64(1.0), np.float64(0.8484000690836159), np.float64(0.7266001148927455))",#FFD8B9,APASS,ok
+AE Aurigae,AE Aurigae,15.170999526977539,0.7609999775886536,,5401.0,"(np.float64(1.0), np.float64(0.9242531438235185), np.float64(0.8593835755570155))",#FFEBDB,APASS,ok
+AE Aurigae,AE Aurigae,15.170999526977539,0.7609999775886536,,5401.0,"(np.float64(1.0), np.float64(0.9242531438235185), np.float64(0.8593835755570155))",#FFEBDB,APASS,ok
+Adhara,Adhara,11.380999565124512,-0.4309999942779541,,24113.0,"(np.float64(0.6468488860079473), np.float64(0.7630549881066367), np.float64(1.0))",#A4C2FF,APASS,ok
+Graffias,HR 5714,14.22599983215332,1.3969999551773071,,3955.0,"(np.float64(1.0), np.float64(0.8027263650614713), np.float64(0.6430624629332578))",#FFCCA3,APASS,ok
+Almaaz,Almaaz,13.314000129699707,0.9179999828338623,,4949.0,"(np.float64(1.0), np.float64(0.8901261001378644), np.float64(0.8004595068522727))",#FFE2CC,APASS,ok
+Alioth,,,,,,,,none,no B-V
+Phecda,HR 4301,12.401000022888184,2.1500000953674316,,3021.0,"(np.float64(1.0), np.float64(0.6976468088351018), np.float64(0.43672281198954443))",#FFB16F,APASS,ok
